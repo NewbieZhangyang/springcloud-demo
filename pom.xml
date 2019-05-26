@@ -27,6 +27,7 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>consumer-user</module>
+        <module>consumer-user-feign</module>
     </modules>
 
     <!-- 设置统一的参数属性-->
@@ -35,6 +36,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <my-project-version>1.0-SNAPSHOT</my-project-version>
     </properties>
 
 
@@ -60,7 +62,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR1</version>
+                <version>Finchley.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
