@@ -23,8 +23,10 @@
 
     <!-- 子模块 -->
     <modules>
+        <module>common-domain</module>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>consumer-user</module>
     </modules>
 
     <!-- 设置统一的参数属性-->

@@ -1,14 +1,15 @@
 package com.newbie.provideruser.controller;
 
+import com.newbie.domain.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.newbie.provideruser.domain.User;
 
 import javax.servlet.http.HttpServletRequest;
+
 
 @RestController
 @RequestMapping("/user")

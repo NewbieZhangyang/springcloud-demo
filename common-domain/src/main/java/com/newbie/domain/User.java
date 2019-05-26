@@ -1,6 +1,4 @@
-package com.newbie.provideruser.domain;
-
-import org.springframework.stereotype.Component;
+package com.newbie.domain;
 
 public class User {
     private String username;
