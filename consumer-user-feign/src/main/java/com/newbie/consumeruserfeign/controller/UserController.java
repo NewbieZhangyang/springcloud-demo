@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.newbie.domain.User;
 
 @RestController
+@SuppressWarnings("all")
 public class UserController {
 
     @Autowired

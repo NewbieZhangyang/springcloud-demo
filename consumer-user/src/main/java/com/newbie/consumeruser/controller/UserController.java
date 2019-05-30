@@ -2,6 +2,7 @@ package com.newbie.consumeruser.controller;
 
 import com.netflix.discovery.converters.Auto;
 import com.newbie.consumeruser.service.IUserService;
+import com.newbie.consumeruser.service.UserServiceImpl;
 import com.newbie.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

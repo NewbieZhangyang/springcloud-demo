@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Service
-@FeignClient(value = "provider-user")
+@FeignClient(value = "provider-user",fallback = UserServiceFallback.class)
 public interface IUserService {
     @RequestMapping(value = "/user/getUserInfo",method = RequestMethod.GET)
     String getUserInfo(User user);
