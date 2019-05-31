@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
 
 
 @RestController
@@ -27,6 +28,12 @@ public class UserController {
         String url = " 请求url = "+request.getRequestURL();
         log.info(message);
         log.info(url);
+        Enumeration<String> enumeration = request.getParameterNames();
+        while (enumeration.hasMoreElements()){
+            String key = enumeration.nextElement();
+            String value = request.getParameter(key);
+            log.info("请求参数： key = "+key+" , value = "+value);
+        }
         message += "  ,  "+url;
         return message;
     }

@@ -15,6 +15,7 @@ public class UserController {
 
     @RequestMapping("/user")
     public String getUserInfo(User user){
-        return userService.getUserInfo(user);
+        String message = "我是Consumer-user项目：";
+        return message + userService.getUserInfo(user);
     }
 }

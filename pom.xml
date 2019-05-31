@@ -28,6 +28,7 @@
         <module>eureka-client</module>
         <module>consumer-user</module>
         <module>consumer-user-feign</module>
+        <module>service-zuul</module>
     </modules>
 
     <!-- 设置统一的参数属性-->
