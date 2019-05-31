@@ -3,6 +3,6 @@
 #  port: 8881
 
 #设置myConfigClient项目的参数
-foo: global-config-version = 1.0.2
+foo: global-config-version = 1.0.3
 username: newbie
 title: Do good, hava fun and the money will come.
