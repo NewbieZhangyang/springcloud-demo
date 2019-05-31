@@ -1,0 +1,8 @@
+#设置tomcat端口号
+server:
+  port: 8881
+
+#设置myConfigClient项目的参数
+foo: Test Spring Cloud Config. This is global config.
+username: newbie
+title: do and hava fun,then money will come.

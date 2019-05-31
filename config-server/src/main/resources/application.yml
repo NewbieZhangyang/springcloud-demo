@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NewbieZhangyang/springcloud-demo
+          searchPaths: globalConfig
+          username:
+          password:
+      label: master
+
+server:
+  port: 8888
