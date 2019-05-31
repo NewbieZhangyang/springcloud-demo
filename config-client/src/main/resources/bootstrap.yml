@@ -1,9 +1,21 @@
+server:
+  port: 8881
+
 spring:
   application:
     name: myConfigClient
   cloud:
     config:
-      uri: http://localhost:8888
+      #uri: http://localhost:8888  # 成为Eureka客户端后，不再需要指定Config-Server的ip和端后号，只需要指定服务名即可
       fail-fast: true
+      discovery:
+        enabled: true
+        serviceId: config-server  # 指定要访问的 Config-Server 在 Eureka-Server 中注册的服务名
   profiles:
     active: dev
+
+#配置服务注册中心Eureka-Server的地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
