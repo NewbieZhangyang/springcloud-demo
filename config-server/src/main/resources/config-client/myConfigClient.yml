@@ -1,0 +1,6 @@
+server:
+  port: 8881
+
+foo: Test Spring Cloud Config - by native
+username: newbie
+title: hava fun
