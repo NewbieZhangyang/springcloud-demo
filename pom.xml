@@ -29,6 +29,8 @@
         <module>consumer-user</module>
         <module>consumer-user-feign</module>
         <module>service-zuul</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
     <!-- 设置统一的参数属性-->
