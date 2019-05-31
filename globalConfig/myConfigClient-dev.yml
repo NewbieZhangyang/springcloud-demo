@@ -3,6 +3,6 @@ server:
   port: 8881
 
 #设置myConfigClient项目的参数
-foo: Test Spring Cloud Config. This is global config.
+foo: This is global config. My git branch is test-config-global.
 username: newbie
 title: do and hava fun,then money will come.
